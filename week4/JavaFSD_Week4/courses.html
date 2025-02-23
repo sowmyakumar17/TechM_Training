@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digiterati</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!--NavBar-->
+    <nav class="navbr" id="nav">
+        <a href="index.html" class="navbar-brand">
+            <p class="logo-txt">Digiterati</p>
+        </a>
+        <div class="navbr-nav">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="courses.html" class="nav-item" style="color: #fb3f8d;">Courses</a>
+            <a href="instructors.html" class="nav-item">Instructors</a>
+            <a href="enrollment.html" class="nav-item">Enrollment</a>
+            <a href="login.html" class="nav-item"><i class="fa fa-user"></i></a>
+        </div>
+        <button class="open-btn" onclick="openFun()" ><i class="fa-solid fa-bars funbtn"></i></button>
+        <button class="collapse-btn" onclick="collapseFun()" ><i class="fa-solid fa-xmark funbtn"></i></button>
+    </nav>
+    <div class="collapse" id="navbarCollapse">   
+        <a href="index.html" class="coll-item">Home</a>
+        <a href="courses.html" class="coll-item">Courses</a>
+        <a href="instructors.html" class="coll-item">Instructors</a>
+        <a href="enrollment.html" class="coll-item">Enrollment</a>
+        <a href="login.html" class="coll-item"><i class="fa fa-user"></i></a> 
+    </div>
+
+    <!--Banner-->
+    <div class="container-fluid bg-primary py-5 mb-5 text-center align-content-center page-header">
+        <h1 class="display-3 text-white animated slideInDown">Courses</h1>
+    </div>
+
+    <!--Courses-->
+    <div class="py-3">
+        <div class="container text-center">
+            <h6 class="section-title bg-white text-center px-3">Popular Courses</h6>
+            <h1 class="mb-5" style="color: #fb3f8d;">Explore new and trending free online courses</h1>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 course">
+                    <div class="course-item shadow">
+                        <div class="position-relative overflow-hidden text-light image">
+                            <img class="img-fluid" src="https://www.simplilearn.com.cach3.com/ice9/app/IntroductiontoHTML360x194.jpg" alt="">
+                            <div style="position:absolute;top: 15px;left: 16px; font-size:12px; border-radius:3px; background-color:#ccfb3f;" class="px-2 py-1 fw-bold text-uppercase">FREE</div>
+                        </div>
+                        <div class="p-2 pb-0">
+                            <h5 class="mb-1"><a href="./single.html" class="text-dark text-decoration-none">HTML Course for Beginners</a> </h5>
+                        </div>
+                        <div class="d-flex">
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-star text-warning me-2"></i>4.55</small>
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-user-graduate me-2"></i>5.8L+Learners</small>
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-user me-2"></i>Beginner</small>
+                        </div>
+                        <div class="d-flex">
+                            <small class="flex-fill text-left p-2 px-2"><i class="fa fa-clock me-2"></i>2.0 Hrs</small>
+                            <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 0</small>
+                            <small class=" text-primary py-1 px-2 fw-bold fs-6" style="float:right;"><a href="#" class="text-decoration-none text-success">Enroll Now </a><i class="fa fa-chevron-right me-2 fs-10 text-success"></i></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 course">
+                    <div class="course-item shadow">
+                        <div class="position-relative overflow-hidden text-light image">
+                            <img class="img-fluid" src="https://images.prismic.io/turing/652ebea8fbd9a45bcec8188d_What_Goes_Behind_Writing_a_Flawless_CSS_Code_37742e2bcf.webp?auto=format,compress" alt="">
+                            <div style="position:absolute;top: 15px;left: 16px; font-size:12px; border-radius:3px; background-color:#00b3c0;" class="px-2 py-1 fw-bold text-uppercase">PAID</div>
+                        </div>
+                        <div class="p-2 pb-0">
+                            <h5 class="mb-1"><a href="single.html" class="text-dark text-decoration-none">Front End Development-CSS</a> </h5>
+                        </div>
+                        <div class="d-flex">
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-star text-warning me-2"></i>4.55</small>
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-user-graduate me-2"></i>4.8L+Learners</small>
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-user me-2"></i>Beginner</small>
+                        </div>
+                        <div class="d-flex">
+                            <small class="flex-fill text-left p-2 px-2"><i class="fa fa-clock me-2"></i>5.0 Hrs</small>
+                            <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 199</small>
+                            <small class=" text-primary py-1 px-2 fw-bold fs-6" style="float:right;"><a href="#" class="text-decoration-none text-success">Enroll Now </a><i class="fa fa-chevron-right me-2 fs-10 text-success"></i></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 course">
+                    <div class="course-item shadow">
+                        <div class="position-relative overflow-hidden text-light image">
+                            <img class="img-fluid" src="https://img.freepik.com/free-vector/programmers-using-javascript-programming-language-computer-tiny-people-javascript-language-javascript-engine-js-web-development-concept-bright-vibrant-violet-isolated-illustration_335657-986.jpg" alt="">
+                            <div style="position:absolute;top: 15px;left: 16px; font-size:12px; border-radius:3px; background-color:#00b3c0;" class="px-2 py-1 fw-bold text-uppercase">PAID</div>
+                        </div>
+                        <div class="p-2 pb-0">
+                            <h5 class="mb-1"><a href="single.html" class="text-dark text-decoration-none">Introduction to JavaScript</a> </h5>
+                        </div>
+                        <div class="d-flex">
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-star text-warning me-2"></i>4.55</small>
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-user-graduate me-2"></i>3.8L+Learners</small>
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-user me-2"></i>Beginner</small>
+                        </div>
+                        <div class="d-flex">
+                            <small class="flex-fill text-left p-2 px-2"><i class="fa fa-clock me-2"></i>7.0 Hrs</small>
+                            <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 299</small>
+                            <small class=" text-primary py-1 px-2 fw-bold fs-6" style="float:right;"><a href="#" class="text-decoration-none text-success">Enroll Now </a><i class="fa fa-chevron-right me-2 fs-10 text-success"></i></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 course">
+                    <div class="course-item shadow">
+                        <div class="position-relative overflow-hidden text-light image">
+                            <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC0DNc1M7GHFWoWIyvgE0YdOx95Admi4Vhag&s" alt="">
+                            <div style="position:absolute;top: 15px;left: 16px; font-size:12px; border-radius:3px; background-color:#ccfb3f;" class="px-2 py-1 fw-bold text-uppercase">FREE</div>
+                        </div>
+                        <div class="p-2 pb-0">
+                            <h5 class="mb-1"><a href="single.html" class="text-dark text-decoration-none">Python Programming</a> </h5>
+                        </div>
+                        <div class="d-flex">
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-star text-warning me-2"></i>3.75</small>
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-user-graduate me-2"></i>5.8L+Learners</small>
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-user me-2"></i>Beginner</small>
+                        </div>
+                        <div class="d-flex">
+                            <small class="flex-fill text-left p-2 px-2"><i class="fa fa-clock me-2"></i>2.0 Hrs</small>
+                            <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 0</small>
+                            <small class=" text-primary py-1 px-2 fw-bold fs-6" style="float:right;"><a href="#" class="text-decoration-none text-success">Enroll Now </a><i class="fa fa-chevron-right me-2 fs-10 text-success"></i></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 course">
+                    <div class="course-item shadow">
+                        <div class="position-relative overflow-hidden text-light image">
+                            <img class="img-fluid" src="https://www.fita.in/wp-content/uploads/2020/10/sql-for-data-science.jpg" alt="">
+                            <div style="position:absolute;top: 15px;left: 16px; font-size:12px; border-radius:3px; background-color:#00b3c0;" class="px-2 py-1 fw-bold text-uppercase">FREE</div>
+                        </div>
+                        <div class="p-2 pb-0">
+                            <h5 class="mb-1"><a href="single.html" class="text-dark text-decoration-none">SQL for Data Science</a> </h5>
+                        </div>
+                        <div class="d-flex">
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-star text-warning me-2"></i>4.55</small>
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-user-graduate me-2"></i>5.8L+Learners</small>
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-user me-2"></i>Beginner</small>
+                        </div>
+                        <div class="d-flex">
+                            <small class="flex-fill text-left p-2 px-2"><i class="fa fa-clock me-2"></i>2.0 Hrs</small>
+                            <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 299</small>
+                            <small class=" text-primary py-1 px-2 fw-bold fs-6" style="float:right;"><a href="#" class="text-decoration-none text-success">Enroll Now </a><i class="fa fa-chevron-right me-2 fs-10 text-success"></i></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 course">
+                    <div class="course-item shadow">
+                        <div class="position-relative overflow-hidden text-light image">
+                            <img class="img-fluid" src="https://www.techzine.eu/wp-content/uploads/2025/02/ChatGPT-1.jpg" alt="">
+                            <div style="position:absolute;top: 15px;left: 16px; font-size:12px; border-radius:3px; background-color:#ccfb3f;" class="px-2 py-1 fw-bold text-uppercase">FREE</div>
+                        </div>
+                        <div class="p-2 pb-0">
+                            <h5 class="mb-1"><a href="single.html" class="text-dark text-decoration-none">ChatGPT for Beginners</a> </h5>
+                        </div>
+                        <div class="d-flex">
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-star text-warning me-2"></i>4.55</small>
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-user-graduate me-2"></i>5.8L+Learners</small>
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-user me-2"></i>Beginner</small>
+                        </div>
+                        <div class="d-flex">
+                            <small class="flex-fill text-left p-2 px-2"><i class="fa fa-clock me-2"></i>2.0 Hrs</small>
+                            <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 0</small>
+                            <small class=" text-primary py-1 px-2 fw-bold fs-6" style="float:right;"><a href="#" class="text-decoration-none text-success">Enroll Now </a><i class="fa fa-chevron-right me-2 fs-10 text-success"></i></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 course">
+                    <div class="course-item shadow">
+                        <div class="position-relative overflow-hidden text-light image">
+                            <img class="img-fluid" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_aws.jpg" alt="">
+                            <div style="position:absolute;top: 15px;left: 16px; font-size:12px; border-radius:3px; background-color:#ccfb3f;" class="px-2 py-1 fw-bold text-uppercase">FREE</div>
+                        </div>
+                        <div class="p-2 pb-0">
+                            <h5 class="mb-1"><a href="single.html" class="text-dark text-decoration-none">AWS for Beginners</a> </h5>
+                        </div>
+                        <div class="d-flex">
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-star text-warning me-2"></i>4.55</small>
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-user-graduate me-2"></i>5.8L+Learners</small>
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-user me-2"></i>Beginner</small>
+                        </div>
+                        <div class="d-flex">
+                            <small class="flex-fill text-left p-2 px-2"><i class="fa fa-clock me-2"></i>2.0 Hrs</small>
+                            <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 0</small>
+                            <small class=" text-primary py-1 px-2 fw-bold fs-6" style="float:right;"><a href="#" class="text-decoration-none text-success">Enroll Now </a><i class="fa fa-chevron-right me-2 fs-10 text-success"></i></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 course">
+                    <div class="course-item shadow">
+                        <div class="position-relative overflow-hidden text-light image">
+                            <img class="img-fluid" src="https://www.influentialsoftware.com/wp-content/uploads/2024/01/cloud-storage-background-business-network-design.jpg" alt="">
+                            <div style="position:absolute;top: 15px;left: 16px; font-size:12px; border-radius:3px; background-color:#00b3c0;" class="px-2 py-1 fw-bold text-uppercase">FREE</div>
+                        </div>
+                        <div class="p-2 pb-0">
+                            <h5 class="mb-1"><a href="single.html" class="text-dark text-decoration-none">Microsoft Azure Essentials</a> </h5>
+                        </div>
+                        <div class="d-flex">
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-star text-warning me-2"></i>4.55</small>
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-user-graduate me-2"></i>2.8L+Learners</small>
+                            <small class="flex-fill text-center py-1 px-2"><i class="fa fa-user me-2"></i>Beginner</small>
+                        </div>
+                        <div class="d-flex">
+                            <small class="flex-fill text-left p-2 px-2"><i class="fa fa-clock me-2"></i>3.0 Hrs</small>
+                            <small class="py-1 px-2 fw-bold fs-6 text-center">₹ 199</small>
+                            <small class=" text-primary py-1 px-2 fw-bold fs-6" style="float:right;"><a href="#" class="text-decoration-none text-success">Enroll Now </a><i class="fa fa-chevron-right me-2 fs-10 text-success"></i></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Footer-->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <p><a class="text-light" href="">About Us</a></p>
+                    <p><a class="text-light" href="">Contact Us</a></p>
+                    <p><a class="text-light" href="">Privacy Policy</a></p>
+                    <p><a class="text-light" href="">Terms &amp; Condition</a></p>
+                    <p><a class="text-light" href="">FAQs &amp; Help</a></p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Bangalore, Karnataka</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 8683045908</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>secretcoder@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social " href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">Subscribe to our Newsletter</h4>
+                    <p>Subscribe now and join our growing community of learners committed to lifelong education! </p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <form action="#">
+                            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="email" placeholder="Your email" required="">
+                            <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        © <a class="border-bottom" href="index.html">Digiterati</a>, All Right Reserved.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Script.js"></script>
+</body>
+</html>
