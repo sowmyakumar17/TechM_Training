@@ -1,0 +1,25 @@
+<div class="p-5">
+    <div class="bg-black p-2" >
+        <h2 class="text-white text-center">Welcome to Task Manager</h2>
+    </div>
+    <app-task-list></app-task-list>
+
+    <div class="bg-black p-2" >
+        <h2 class="text-white text-center">Welcome to Student Cards</h2>
+    </div>
+    <div class="mt-2 p-3 bg-warning-subtle" *ngIf="isObjectNotEmpty(std); else noStd">
+        <p><strong>Register Number: </strong>{{std.regNo}}</p>
+        <p><strong>Student Name: </strong>{{std.name}}</p>
+        <p><strong>Department: </strong>{{std.dept}}</p>
+        <p><strong>Mobile Number: </strong>{{std.contact}}</p>
+    </div>
+    <ng-template #noStd>
+        <p class="bg-danger-subtle p-3 mt-2">Setect Student to get details</p>
+    </ng-template>
+    <div class="container">
+        <div class="row">
+            <app-student-card class="col" *ngFor="let student of students" [student]="student" (studentclicked)="markstudentclicked($event)"></app-student-card>
+        </div>
+    </div>
+</div>
+

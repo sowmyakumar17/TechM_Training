@@ -1,0 +1,5 @@
+<div class="box bg-warning w-50 m-3 p-4" [class.completed]="task.completed" >
+    <p class="fw-medium">{{ task.title }}</p>
+    <button class="btn btn-success" (click)="completeTask()" [disabled]="task.completed">Complete</button>
+    <button class="btn btn-danger" (click)="activate()" [disabled]="!task.completed">Activate</button>
+</div>

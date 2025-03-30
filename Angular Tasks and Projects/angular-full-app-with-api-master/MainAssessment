@@ -1,0 +1,15 @@
+Create a compresive SPA
+angular application using the following concepts
+
+* Components
+* Parent Child Components
+* Directives(Structural,Attribute)
+* @Input,@Output
+* Routing and Routing Parameters
+* Local Storage
+* Routing Gaurd
+* Services and observables
+* API Call
+* Form Handling ( Template and Model Based Approach)
+* Inbuilt Pipes
+* Custom Pipes
